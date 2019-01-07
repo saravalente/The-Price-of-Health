@@ -1,0 +1,52 @@
+State,Code,Coverage,Premiums,Charges
+Alabama,1,91,179,1491
+Alaska,2,86,345,2161
+Arizona,4,88,216,2485
+Arkansas,5,92,184,1625
+California,6,92,225,3341
+Colorado,8,90,226,2721
+Connecticut,9,94,291,2601
+Delaware,10,91,272,2814
+District of Columbia,11,95,270,2609
+Florida,12,88,233,2087
+Georgia,13,88,180,1665
+Hawaii,15,95,268,2349
+Idaho,16,91,199,2659
+Illinois,17,93,247,2394
+Indiana,18,93,239,2280
+Iowa,19,95,251,1472
+Kansas,20,92,229,1537
+Kentucky,21,94,231,1668
+Louisiana,22,89,249,1782
+Maine,23,93,336,2327
+Maryland,24,94,180,2514
+Massachusetts,25,94,456,2783
+Michigan,26,94,204,2159
+Minnesota,27,94,236,2113
+Mississippi,28,88,213,1343
+Missouri,29,92,195,2179
+Montana,30,93,244,1284
+Nebraska,31,93,237,1758
+Nevada,32,91,207,1887
+New Hampshire,33,93,302,2322
+New Jersey,34,92,473,2555
+New Mexico,35,89,190,2442
+New York,36,94,429,2475
+North Carolina,37,89,240,2010
+North Dakota,38,92,277,1726
+Ohio,39,94,222,2608
+Oklahoma,40,89,209,1798
+Oregon,41,95,220,3368
+Pennsylvania,42,95,243,2307
+Rhode Island,44,95,328,2759
+South Carolina,45,91,227,1938
+South Dakota,46,92,244,1218
+Tennessee,47,89,213,1704
+Texas,48,85,218,2292
+Utah,49,88,158,2612
+Vermont,50,95,401,2162
+Virginia,51,90,229,1933
+Washington,53,93,279,3248
+West Virginia,54,93,275,1570
+Wisconsin,55,93,238,2280
+Wyoming,56,90,297,1538

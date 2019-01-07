@@ -1,0 +1,450 @@
+{
+  "name": "All",
+  "children": [
+    {
+      "range": [
+        [
+          "99201",
+          "99499"
+        ]
+      ],
+      "name": "Evaluation and Management",
+      "children": [
+        {
+          "name": "Office/Outpatient Services",
+          "size": 39555249064
+        },
+        {
+          "name": "Hospital Inpatient Services",
+          "size": 20613594800
+        },
+        {
+          "name": "Emergency Department Services",
+          "size": 15168354292
+        },
+        {
+          "name": "Hospital Observation Services",
+          "size": 745329091
+        },
+        {
+          "name": "Critical Care Services",
+          "size": 3871810718
+        },
+        {
+          "name": "Nursing Facility Services",
+          "size": 3794716962
+        },
+        {
+          "name": "Nursing Home/Custodial Care",
+          "size": 536028552
+        },
+        {
+          "name": "Home Health Services",
+          "size": 442035885
+        },
+        {
+          "name": "Prolonged Services",
+          "size": 68347391
+        },
+        {
+          "name": "Preventive Medicine",
+          "size": 9290573
+        },
+        {
+          "name": "Transitional Care Management",
+          "size": 159473504
+        }
+      ]
+    },
+    {
+      "range": [
+        [
+          " 10000",
+          "69990"
+        ]
+      ],
+      "name": "Surgery",
+      "children": [
+        {
+          "name": "General",
+          "size": 44731783
+        },
+        {
+          "name": "Integumentary System",
+          "size": 7510001347
+        },
+        {
+          "name": "Musculoskeletal System",
+          "size": 10005088580
+        },
+        {
+          "name": "Respiratory System",
+          "size": 1362924715
+        },
+        {
+          "name": "Cardiovascular System",
+          "size": 8229695906
+        },
+        {
+          "name": "Hemic and Lymphatic Systems",
+          "size": 178756921
+        },
+        {
+          "name": "Throat",
+          "size": 6723663
+        },
+        {
+          "name": "Digestive System",
+          "size": 8412590544
+        },
+        {
+          "name": "Urinary System",
+          "size": 2402379640
+        },
+        {
+          "name": "Male Genital System",
+          "size": 216894467
+        },
+        {
+          "name": "Reproductive System and Intersex",
+          "size": 103531
+        },
+        {
+          "name": "Female Genital System",
+          "size": 164314380
+        },
+        {
+          "name": "Maternity Care/Childbirth",
+          "size": 92931
+        },
+        {
+          "name": "Endocrine System",
+          "size": 46515758
+        },
+        {
+          "name": "Nervous System",
+          "size": 8213596001
+        },
+        {
+          "name": "Eye",
+          "size": 12828508171
+        },
+        {
+          "name": "Auditory System",
+          "size": 212050690
+        }
+      ]
+    },
+    {
+      "range": [
+        [
+          " 90281",
+          "99099"
+        ],
+        [
+          " 99151",
+          "99199"
+        ],
+        [
+          " 99500",
+          "99607"
+        ]
+      ],
+      "name": "Medicine",
+      "children": [
+        {
+          "name": "Immunization for Vaccines/Toxoids",
+          "size": 7638626
+        },
+        {
+          "name": "Vaccines, Toxoids",
+          "size": 1487106773
+        },
+        {
+          "name": "Psychiatry",
+          "size": 1593409779
+        },
+        {
+          "name": "Biofeedback",
+          "size": 3931787
+        },
+        {
+          "name": "Dialysis",
+          "size": 2307885141
+        },
+        {
+          "name": "Gastroenterology",
+          "size": 78903585
+        },
+        {
+          "name": "Ophthalmology",
+          "size": 5947315911
+        },
+        {
+          "name": "Special Otorhinolaryngologic Services",
+          "size": 355351570
+        },
+        {
+          "name": "Cardiovascular",
+          "size": 8958800019
+        },
+        {
+          "name": "Noninvasive Vascular Diagnostic Studies",
+          "size": 2447764660
+        },
+        {
+          "name": "Pulmonary",
+          "size": 555902199
+        },
+        {
+          "name": "Allergy and Clinical Immunology",
+          "size": 362083462
+        },
+        {
+          "name": "Endocrinology",
+          "size": 8031741
+        },
+        {
+          "name": "Neurology and Neuromuscular Procedures",
+          "size": 2193931116
+        },
+        {
+          "name": "Central Nervous System Assessments",
+          "size": 242262294
+        },
+        {
+          "name": "Health and Behavior Assessment",
+          "size": 10735896
+        },
+        {
+          "name": "Hydration, Therapeutic, Chemotherapy ",
+          "size": 2170601513
+        },
+        {
+          "name": "Photodynamic Therapy",
+          "size": 30331180
+        },
+        {
+          "name": "Special Dermatological Procedures",
+          "size": 55598895
+        },
+        {
+          "name": "Physical Medicine and Rehabilitation",
+          "size": 5952059903
+        },
+        {
+          "name": "Medical Nutrition Therapy",
+          "size": 19644555
+        },
+        {
+          "name": "Osteopathic Manipulative Treatment",
+          "size": 39068944
+        },
+        {
+          "name": "Chiropractic Manipulative Treatment",
+          "size": 983560562
+        },
+        {
+          "name": "Special Services, Procedures and Reports",
+          "size": 3231
+        },
+        {
+          "name": "Other Services and Procedures",
+          "size": 182078361
+        }
+      ]
+    },
+    {
+      "range": [
+        [
+          " 80000",
+          "89398"
+        ]
+      ],
+      "name": "Pathology and Laboratory",
+      "children": [
+        {
+          "name": "Organ or Disease-Oriented Panels",
+          "size": 3546688792
+        },
+        {
+          "name": "Therapeutic Drug Assays",
+          "size": 265571205
+        },
+        {
+          "name": "Evocative/Suppression Testing",
+          "size": 926467
+        },
+        {
+          "name": "Consultations (Clinical Pathology)",
+          "size": 5747831
+        },
+        {
+          "name": "Urinalysis",
+          "size": 380335676
+        },
+        {
+          "name": "Chemistry",
+          "size": 8996787216
+        },
+        {
+          "name": "Hematology and Coagulation",
+          "size": 1686805404
+        },
+        {
+          "name": "Immunology",
+          "size": 1120840582
+        },
+        {
+          "name": "Transfusion Medicine",
+          "size": 5965515
+        },
+        {
+          "name": "Microbiology",
+          "size": 1248964251
+        },
+        {
+          "name": "Cytopathology",
+          "size": 857128704
+        },
+        {
+          "name": "Cytogenetic Studies",
+          "size": 73248908
+        },
+        {
+          "name": "Surgical Pathology",
+          "size": 5132325279
+        },
+        {
+          "name": "In Vivo Lab Procedures",
+          "size": 333380
+        },
+        {
+          "name": "Other Procedures",
+          "size": 14894305
+        }
+      ]
+    },
+    {
+      "range": [
+        [
+          "00100",
+          "01999"
+        ],
+        [
+          " 99100",
+          "99150"
+        ]
+      ],
+      "name": "Anesthesia",
+      "children": [
+        {
+          "name": "Head",
+          "size": 1604473149
+        },
+        {
+          "name": "Neck",
+          "size": 135400388
+        },
+        {
+          "name": "Thorax",
+          "size": 154310107
+        },
+        {
+          "name": "Intrathoracic",
+          "size": 588329409
+        },
+        {
+          "name": "Spinal Cord",
+          "size": 378561705
+        },
+        {
+          "name": "Upper Abdomen",
+          "size": 1772955577
+        },
+        {
+          "name": "Lower Abdomen",
+          "size": 1886207025
+        },
+        {
+          "name": "Perineum",
+          "size": 176321388
+        },
+        {
+          "name": "Pelvis",
+          "size": 6039332
+        },
+        {
+          "name": "Upper Leg",
+          "size": 207384726
+        },
+        {
+          "name": "Knee",
+          "size": 502871140
+        },
+        {
+          "name": "Lower Leg",
+          "size": 95674577
+        },
+        {
+          "name": "Shoulder",
+          "size": 88713604
+        },
+        {
+          "name": "Upper Arm and Elbow",
+          "size": 470262
+        },
+        {
+          "name": "Forearm, Wrist and Hand",
+          "size": 196124794
+        },
+        {
+          "name": "Radiology",
+          "size": 359320471
+        },
+        {
+          "name": "Burn Excisions or Debridement",
+          "size": 945976
+        },
+        {
+          "name": "Other Procedures",
+          "size": 285976822
+        },
+        {
+          "name": "Moderate (Conscious) Sedation",
+          "size": 105605568
+        }
+      ]
+    },
+    {
+      "range": [
+        [
+          " 70000-79999"
+        ]
+      ],
+      "name": "Radiology",
+      "children": [
+        {
+          "name": "Diagnostic Ultrasound",
+          "size": 1878904658
+        },
+        {
+          "name": "Radiologic Guidance",
+          "size": 756660605
+        },
+        {
+          "name": "Breast Mammography",
+          "size": 243190323
+        },
+        {
+          "name": "Bone/Joint",
+          "size": 363630417
+        },
+        {
+          "name": "Radiation Oncology",
+          "size": 3299766335
+        }
+      ]
+    }
+  ]
+}
