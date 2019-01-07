@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Your Knowledge</title>
+
+    <!-- Custom CSS code -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/quiz_style.css">
+
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+
+<div id="quiz-analysis" class="overlay">
+    <div class="overlay-bar">
+        <span id="quiz-results-span">Quiz Results</span>
+    </div>
+    <a href="javascript:void(0)" class="close-button" onclick="closeOverlay()">&times;</a>
+    <div id="overlay-content-div" class="overlay-content">
+        <div class="quiz-analysis-overview" id="quiz-analysis-div-1">
+            <p id="quiz-analysis-1"><strong>You're practically an expert!</strong></p>
+            <p id="quiz-analysis-2">You got 5/5 questions!</p>
+            <p>The average viewer got 3/5 questions correct.</p>
+        </div>
+        <div class="quiz-analysis-content" id="quiz-analysis-div-2">
+            <p>
+                <strong>Question 1:</strong> The US spends 17.9% of its GDP on health care. This is $3.3 trillion, or
+                $10,348 per person, which is the largest per capita spending out of any nation. Around a third of
+                viewers answered this question correctly.
+            </p>
+        </div>
+        <div class="quiz-analysis-content" id="quiz-analysis-div-3">
+            <p>
+                <strong>Question 2:</strong> The correct answer is true. About 30 cents of every health care dollar is
+                wasted, for a total of around $1 trillion annually. Key categories include clinical waste (14%),
+                administrative complexity (9%), excessive prices (5%), and fraud and abuse (7%). More than three
+                quarters of viewers answered correctly.
+            </p>
+        </div>
+        <div class="quiz-analysis-content" id="quiz-analysis-div-4">
+            <p>
+                <strong>Question 3:</strong> The correct answer is true. The US is the only wealthy, industrialized
+                nation in the world without a universal health care system. As a result, the uninsured rate hovers at
+                around 12%, with tens of millions of Americans lacking coverage. About half of the viewers answered
+                this question correctly.
+            </p>
+        </div>
+        <div class="quiz-analysis-content" id="quiz-analysis-div-5">
+            <p>
+                <strong>Question 4:</strong> The correct answer is false. Unfortunately, the number is actually
+                substantially higher. The lack of insurance coverage can be tied to 45,000 (not 1,000) deaths per
+                year in the US. Under a quarter of viewers answered correctly.
+            </p>
+        </div>
+        <div class="quiz-analysis-content" id="quiz-analysis-div-6">
+            <p>
+                <strong>Question 5:</strong> According to the WHO, the US health care system ranks 37th among the
+                countries in the world. The US also falls behind when considering other key health metrics such as
+                infant mortality, where it ranks 47th in the world. About half of the viewers were correct.
+            </p>
+        </div>
+
+        <div id="mouse-div" class="mouse">
+            <div class="mouse-icon" id="mouse-icon-btn">
+                <div class="scroll-icon"></div>
+            </div>
+            <span id="scroll-icon-text">Scroll Down</span>
+        </div>
+    </div>
+</div>
+
+<div class="page">
+    <header>
+        <div id="navigation-header">
+            <div class="header-container">
+                <a href="index.html"><i class="fa fa-heartbeat fa-2x" aria-hidden="true" id="logo" style="transform: translate(0, 7px); color: #001427;"></i></a>
+                <span>
+                    The Price of Health
+                </span>
+                <nav>
+                    <a href="quiz.html" class="navigation-item">Quiz</a>
+                    <a href="global.html" class="navigation-item">Global Comparison</a>
+                    <a href="spending.html" class="navigation-item">Spending</a>
+                    <a href="insurance.html" class="navigation-item">Insurance</a>
+                    <a href="summary.html" class="navigation-item">Summary</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <h1>Test Your Knowledge</h1>
+        <p class="subtitle">
+            How much do you know about the US health care system and how it fares against the rest of the world? Take the quiz below to find out!
+        </p>
+        <div class="quiz-container">
+            <div class="quiz-wrapper">
+                <div class="quiz-question">
+                    <p class="question-text">The % of US GDP spent on health care is closest to...</p>
+                    <button class="answer-button q1" onclick="quizButtonClicked(this)">5%</button>
+                    <button class="answer-button q1" onclick="quizButtonClicked(this)">10%</button>
+                    <button class="answer-button q1" onclick="quizButtonClicked(this)">15%</button>
+                    <button class="answer-button q1 correct-answer" onclick="quizButtonClicked(this)">20%</button>
+                    <label class="question-label">Question 1</label>
+                </div>
+                <div class="quiz-question">
+                    <p class="question-text">It is estimated that 30% of US health care spending each year is wasted.</p>
+                    <button class="answer-button q2 correct-answer" onclick="quizButtonClicked(this)">TRUE</button>
+                    <button class="answer-button q2" onclick="quizButtonClicked(this)">FALSE</button>
+                    <label class="question-label">Question 2</label>
+                </div>
+                <div class="quiz-question">
+                    <p class="question-text">America is the only wealthy, industrialized nation in the world without a universal health care system.</p>
+                    <button class="answer-button q3 correct-answer" onclick="quizButtonClicked(this)">TRUE</button>
+                    <button class="answer-button q3" onclick="quizButtonClicked(this)">FALSE</button>
+                    <label class="question-label">Question 3</label>
+                </div>
+                <div class="quiz-question">
+                    <p class="question-text">The lack of insurance coverage can be tied to 1,000 deaths per year in the US.</p>
+                    <button class="answer-button q4" onclick="quizButtonClicked(this)">TRUE</button>
+                    <button class="answer-button q4 correct-answer" onclick="quizButtonClicked(this)">FALSE</button>
+                    <label class="question-label">Question 4</label>
+                </div>
+                <div class="quiz-question">
+                    <p class="question-text">What is the WHO ranking of the US health care system among the countries in the world?</p>
+                    <button class="answer-button q5" onclick="quizButtonClicked(this)">3rd</button>
+                    <button class="answer-button q5" onclick="quizButtonClicked(this)">11th</button>
+                    <button class="answer-button q5 correct-answer" onclick="quizButtonClicked(this)">37th</button>
+                    <button class="answer-button q5" onclick="quizButtonClicked(this)">52nd</button>
+                    <label class="question-label" onclick="quizButtonClicked(this)">Question 5</label>
+                </div>
+                <div class="quiz-button-container">
+                    <button id="quiz-submit" class="quiz-button" type="submit" onclick="quizSubmitted()">SUBMIT</button>
+                </div>
+                <div id="quiz-error-message">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Load JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/fontawesome-all.min.js"></script>
+
+<script src="js/quiz.js"></script>
+
+</body>
+</html>

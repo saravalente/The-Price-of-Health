@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spending and Costs</title>
+
+    <!-- Custom CSS code -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/spending_style.css">
+    <style>
+
+        path {
+            stroke: #fff;
+        }
+
+    </style>
+
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+
+<div class="page">
+    <header>
+        <div id="navigation-header">
+            <div class="header-container">
+                <a href="index.html"><i class="fa fa-heartbeat fa-2x" aria-hidden="true" id="logo" style="transform: translate(0, 7px); color: #001427;"></i></a>
+                <span>
+                    The Price of Health
+                </span>
+                <nav>
+                    <a href="quiz.html" class="navigation-item">Quiz</a>
+                    <a href="global.html" class="navigation-item">Global Comparison</a>
+                    <a href="spending.html" class="navigation-item">Spending</a>
+                    <a href="insurance.html" class="navigation-item">Insurance</a>
+                    <a href="summary.html" class="navigation-item">Summary</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <h1>Health Care Spending and Costs</h1>
+        <div class="visualization-container">
+            <div id="cumulativevis"></div>
+            <button type="button" id="done-btn" onclick="doneClicked()" disabled>I'm done</button>
+            <button type="button" id="start-over-btn" onclick="startOverClicked()" disabled>Start over</button>
+        </div>
+        <div class="text-container">
+            <p id="typewriter-effect"></p>
+        </div>
+    </div>
+    <div style="float: left; width: 45%; text-align: center; padding: 0 2% 0 2%;">
+        <div class="text-container">
+            <p id="typewriter-effect2"></p>
+        </div>
+        <h3 style="font-weight: 200;">Scroll over the sunburst diagram to the right to explore the breakdown of Medicaid costs in 2015. Click on a section to see the breakdown of costs within that category.</h3>
+        <h2 id="explanation">
+            In 2015, <span id="cat-name"></span> procedures made up <span id="percentage"></span> of <span id="parent-cat"></span> costs.
+        </h2>
+
+    </div>
+    <div style="float: left; width: 50%;">
+        <div id="sunburst" style="margin: 2% auto;"><h2 style="font-weight: 300; text-align: center; margin: 0 auto;">Breakdown of Health Care Costs</h2></div>
+    </div>
+</div>
+
+<!-- Load JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/d3.js"></script>
+<script src="js/queue.v1.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<script src="js/fontawesome-all.min.js"></script>
+
+<!-- Visualization objects -->
+<script src="js/sunburst.js"></script>
+<script src="js/cumulative.js"></script>
+
+<script src="js/spending.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Global Comparison</title>
+
+    <!-- Custom CSS code -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/global_style.css">
+
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="global-data-info" class="overlay">
+    <div class="overlay-bar">
+        <i class="fas fa-info-circle" href="javascript:void(0)" id="info-icon"></i>
+        <span id="about-data-span">About the data</span>
+    </div>
+    <a href="javascript:void(0)" class="close-button" onclick="closeOverlay()">&times;</a>
+    <div id="overlay-content-div" class="overlay-content">
+        <div class="data-info-intro">
+            The visualization shows a country's life expectancy on the y axis and annual per capita health expenditure
+            (in inflation-adjusted dollars) on the x axis, over the period 1970-2013. The trajectory of the US is
+            highlighted in red.
+        </div>
+        <div class="data-info-content-div">
+            <strong>The US consistently lags behind...</strong>
+            <br>
+            The US stands out as an outlier: it spends far more on health than any other country, yet the life
+            expectancy of Americans is actually shorter than in other countries that spend far less. Since the mid-1980s,
+            the US has followed a relatively flat trajectory.
+        </div>
+        <div class="data-info-content-div">
+            <strong>The data is highly reflective of health care system quality...</strong>
+            <br>
+            The countries with the highest life expectancies are also the ones with the top-ranked health care systems.
+            Examples include Japan, Switzerland, and Luxembourg.
+        </div>
+    </div>
+</div>
+
+<div class="page">
+    <header>
+        <div id="navigation-header">
+            <div class="header-container">
+                <a href="index.html"><i class="fa fa-heartbeat fa-2x" aria-hidden="true" id="logo" style="transform: translate(0, 7px); color: #001427;"></i></a>
+                <span>
+                    The Price of Health
+                </span>
+                <nav>
+                    <a href="quiz.html" class="navigation-item">Quiz</a>
+                    <a href="global.html" class="navigation-item">Global Comparison</a>
+                    <a href="spending.html" class="navigation-item">Spending</a>
+                    <a href="insurance.html" class="navigation-item">Insurance</a>
+                    <a href="summary.html" class="navigation-item">Summary</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="content-container">
+        <h1>Global Comparison</h1>
+        <div class="visualization-container">
+            <div id="internationalvis"></div>
+        </div>
+        <div class="search-bar-container">
+            <input type="text" id="search-input" onkeyup="updateSearch()" placeholder="Search for countries...">
+
+            <div class="search-bar-list-container">
+                <ul id="search-bar-list">
+                    <li><span>Australia</span></li>
+                    <li><span>Austria</span></li>
+                    <li><span>Belgium</span></li>
+                    <li><span>Canada</span></li>
+                    <li><span>Chile</span></li>
+                    <li><span>Czech Republic</span></li>
+                    <li><span>Denmark</span></li>
+                    <li><span>Estonia</span></li>
+                    <li><span>Finland</span></li>
+                    <li><span>France</span></li>
+                    <li><span>Germany</span></li>
+                    <li><span>Greece</span></li>
+                    <li><span>Hungary</span></li>
+                    <li><span>Iceland</span></li>
+                    <li><span>Ireland</span></li>
+                    <li><span>Israel</span></li>
+                    <li><span>Italy</span></li>
+                    <li><span>Japan</span></li>
+                    <li><span>Latvia</span></li>
+                    <li><span>Luxembourg</span></li>
+                    <li><span>Mexico</span></li>
+                    <li><span>Netherlands</span></li>
+                    <li><span>New Zealand</span></li>
+                    <li><span>Norway</span></li>
+                    <li><span>Poland</span></li>
+                    <li><span>Portugal</span></li>
+                    <li><span>Slovenia</span></li>
+                    <li><span>Spain</span></li>
+                    <li><span>Sweden</span></li>
+                    <li><span>Switzerland</span></li>
+                    <li><span>Turkey</span></li>
+                    <li><span>United Kingdom</span></li>
+                    <li><span>United States</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content-container">
+        <button id="about-data-button" onclick="openOverlay()">About the Data</button>
+    </div>
+</div>
+
+<!-- Load JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/d3.js"></script>
+<script src="js/fontawesome-all.min.js"></script>
+<script src="js/d3-tip.js"></script>
+
+<!-- Visualization object -->
+<script src="js/internationalvis.js"></script>
+
+<script src="js/global.js"></script>
+
+</body>
+</html>
