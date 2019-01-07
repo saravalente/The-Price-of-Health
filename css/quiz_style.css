@@ -1,0 +1,347 @@
+body {
+    background-color: #d3d3de;
+    font-family: "Avenir Next Regular", sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.content-container {
+    text-align: center;
+}
+
+#navigation-header {
+    width: 100%;
+    min-width: 960px;
+    line-height: 60px;
+    border-bottom: 1px solid rgba(20,52,81,0.8);
+    overflow: hidden;
+}
+
+#navigation-header span {
+    display: inline-block;
+    padding-left: 10px;
+    line-height: 25px;
+    color: #143451;
+    font-weight: 600;
+    border-left: 1px solid rgba(20,52,81,0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+#logo {
+    padding: 0 3px 0 10px;
+    margin-right: 5px;
+}
+
+#navigation-header #logo:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+header .header-container {
+    height: 100%;
+}
+
+#navigation-header nav {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.navigation-item {
+    color: #143451;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 3px;
+    margin: 0 12px;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.navigation-item:hover {
+    color: #63c1e6;
+    border-bottom: 3px solid rgba(99,193,230,0.8);
+}
+
+.quiz-container {
+    text-align: center;
+}
+
+.quiz-wrapper {
+    max-width: 650px;
+    width: 100%;
+    border: 1px solid #143451;
+    border-radius: 3px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.1);
+    background-color: rgba(20,52,81,0.35);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: table;
+}
+
+.quiz-question {
+    width: 100%;
+    position: relative;
+    padding-top: 1.75em;
+    border-top: 1px solid #143451;
+    border-bottom: 1px solid #143451;
+    background-color: rgba(20,52,81,0.1);
+    text-align: left;
+}
+
+.quiz-button-container {
+    width: 100%;
+    position: relative;
+    padding-top: 1.25em;
+    border-top: 1px solid #143451;
+    background-color: rgba(20,52,81,0.1);
+    text-align: center;
+}
+
+.question-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: .8em;
+    color: #8fd9f7;
+    font-weight: 400;
+    cursor: text;
+    text-align: left;
+}
+
+.question-text {
+    font-weight: 500;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 38px;
+    line-height: 25px;
+    color: #143451;
+}
+
+h1 {
+    color: #143451;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 35px;
+}
+
+.subtitle {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 35px;
+}
+
+.answer-button {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 30px;
+    font-family: "Avenir Next Regular", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+    border: 1.5px solid #143451;
+    color: #143451;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.quiz-button {
+    margin-bottom: 5px;
+    width: 200px;
+    height: 40px;
+    font-family: "Avenir Next Regular", sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgba(99,193,230,0.8);
+    border: 1.5px solid #143451;
+    color: #143451;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.quiz-button:hover {
+    background-color: rgba(99,193,230,0.35);
+}
+
+#quiz-error-message {
+    color: rgba(255,0,0,0.6);
+    background-color: rgba(20,52,81,0.1);
+    height: 30px;
+    text-transform: uppercase;
+    line-height: 30px;
+    vertical-align: middle;
+    font-weight: 200;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 5px 8px rgba(0,0,0,.25);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    font-size: 22px;
+    color: #143451;
+}
+
+.overlay .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 35px;
+    width: 50px;
+    text-decoration: none;
+    color: #143451;
+}
+
+.overlay .close-button:hover {
+    color: rgba(20,52,81,0.5);
+}
+
+.overlay-bar {
+    position: relative;
+    background-color: rgba(99,193,230,1);
+    border-top: 3px solid rgba(20,52,81,0.8);
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 64px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #143451;
+}
+
+.quiz-analysis-overview {
+    position: relative;
+    top: 0;
+    padding: 10px 20px;
+    line-height: 35px;
+    font-weight: 200;
+}
+
+.quiz-analysis-content {
+    position: absolute;
+    top: 20px;
+    padding: 10px 30px;
+    line-height: 25px;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: left;
+}
+
+#quiz-analysis-div-2 {
+    visibility: hidden;
+}
+
+#quiz-analysis-div-3 {
+    visibility: hidden;
+}
+
+#quiz-analysis-div-4 {
+    visibility: hidden;
+}
+
+#quiz-analysis-div-5 {
+    visibility: hidden;
+}
+
+#quiz-analysis-div-6 {
+    visibility: hidden;
+}
+
+.mouse {
+    position: fixed;
+    left: 100px;
+    margin-left: -50px;
+    top: 350px;
+    width: 300px;
+    height: 55px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.mouse-icon {
+    width: 3px;
+    padding: 8px 12.5px;
+    height: 35px;
+    border: 2px solid #001427;
+    border-radius: 25px;
+    opacity: 0.5;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.mouse-icon:hover {
+    background-color: #63C1E6;
+    cursor: pointer;
+}
+
+.scroll-icon {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #001427;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+}
+
+.mouse span {
+    position: relative;
+    color: #001427;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    top: -30px;
+    font-size: 14px;
+    font-weight: 300;
+}

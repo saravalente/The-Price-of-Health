@@ -1,0 +1,292 @@
+body {
+    background-color: #d3d3de;
+    font-family: "Avenir Next Regular", sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    
+}
+
+.page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#navigation-header {
+    width: 100%;
+    min-width: 960px;
+    line-height: 60px;
+    border-bottom: 1px solid rgba(20,52,81,0.8);
+    overflow: hidden;
+}
+#navigation-header span {
+    display: inline-block;
+    padding-left: 10px;
+    line-height: 25px;
+    color: #143451;
+    font-weight: 600;
+    border-left: 1px solid rgba(20,52,81,0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+#logo {
+    padding: 0 3px 0 10px;
+    margin-right: 5px;
+}
+
+#navigation-header #logo:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Custom dropdown */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.custom-dropdown select {
+    background-color: whitesmoke;
+    color: #143451;
+    font-size: inherit;
+    padding: .5em;
+    padding-right: 2.5em;
+    width: 150px;
+    border: 0;
+    border-radius: 3px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.2em;
+    top: 50%;
+    margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+    width: 2em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+
+header .header-container {
+    height: 100%;
+}
+
+#navigation-header nav {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.navigation-item {
+    color: #143451;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 3px;
+    margin: 0 12px;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.navigation-item:hover {
+    color: #63c1e6;
+    border-bottom: 3px solid rgba(99,193,230,0.8);
+}
+
+h1 {
+    color: #143451;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 35px;
+}
+
+.content-container {
+    text-align: center;
+}
+
+.visualization-container {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.subvis-container {
+    height: 160px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.map-detail {
+    display: inline-block;
+    width: 220px;
+    height: 160px;
+    margin: 0 10px;
+}
+
+#mapvis path {
+    cursor: pointer;
+}
+
+#mapvis circle:hover {
+    cursor: pointer;
+}
+
+/*********************/
+/*  TOOLTIP OVERLAY  */
+/*********************/
+
+.tooltip-title {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.d3-tip {
+    line-height: 1;
+    padding: 8px;
+    font-size: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+.text-container {
+    position: absolute;
+    height: 200px;
+    width: 350px;
+    background-color: rgba(20,52,81,0.35);
+    border-radius: 8px;
+    border: 2px solid rgba(99,193,230,0.8);
+    top: 260px;
+    left: 620px;
+    text-align: left;
+    padding: 0 20px;
+    box-shadow: 0 5px 8px rgba(0,0,0,.25);
+}
+
+#typewriter-effect {
+    color: #143451;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.meter .background {
+    fill: #e6e7e8;
+}
+
+.meter .foreground {
+    fill: rgba(99,193,230,0.8);
+}
+
+h3 {
+    font-weight: 100;
+}
+
+
+#indiv-vs-couple {
+    margin-bottom: 15px;
+    font-size:small;
+
+}
+
+
+#tobacco-question {
+    font-size:small;
+}
+
+/*#indiv-vs-couple input{*/
+    /*margin-left: 20px;*/
+/*}*/
+
+.hi {
+    margin-bottom: 4%;
+}
+
+input[type=number] {
+    padding: 5px;
+    border-width: 0;
+    background-color: whitesmoke;
+    color: #143451;
+    font-size: inherit;
+    width: 140px;
+    border-radius: 3px;
+    text-indent: 0.01px;
+}
+
+#custom-form { margin-top: 20px; margin-left: 20px;}
+
+label{
+    display:inline-block;
+    width:100px;
+    font-size: small;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+#textbox {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#error {
+    font-weight: 500;
+    color: red;
+    margin-top: -40px;
+}
+
+#plansvis {
+    padding-top: 24px;
+}
