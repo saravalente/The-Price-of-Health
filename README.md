@@ -1,10 +1,10 @@
 The Price of Health
 CS 171, Spring 2017
-By: Andrew Jin, Russell Pekala, and Sara Valente
+By: Sara Valente, Andrew Jin, and Russell Pekala
 
-https://ajin97.github.io/the-price-of-health/
+Live site: https://ajin97.github.io/the-price-of-health/
 
-SCREENCAST VIDEO
+Walkthrough:
 
 The file structure of our project is as follows (and all data sources can be found in our process book):
 
