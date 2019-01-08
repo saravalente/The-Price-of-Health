@@ -1,8 +1,6 @@
-The Price of Health
-
-CS 171, Spring 2017
-
-By: Sara Valente, Andrew Jin, and Russell Pekala
+    The Price of Health
+    CS 171, Spring 2017
+    By: Sara Valente, Andrew Jin, and Russell Pekala
 
 Live site: https://ajin97.github.io/the-price-of-health/
 
