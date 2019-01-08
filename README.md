@@ -1,14 +1,17 @@
 The Price of Health
+
 CS 171, Spring 2017
+
 By: Sara Valente, Andrew Jin, and Russell Pekala
 
 Live site: https://ajin97.github.io/the-price-of-health/
+
 Walkthrough: https://www.youtube.com/watch?v=A_YizLjXQ6s
 
 The file structure of our project is as follows (and all data sources can be found in our process book):
 
-root/
-    Included in the root directory are all .html files for the website.
+    root/
+        Included in the root directory are all .html files for the website.
 
     css/
         All are custom stylesheets corresponding with their respective html pages except for the fontawesome directory and files, from which we used glyphicons.
